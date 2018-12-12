@@ -1,0 +1,22 @@
+{
+  "name": "space",
+  "version": "1.0.0",
+  "description": "A project for hackerearth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "lite": "lite-server",
+    "start": "npm run watch:all"
+  },
+  "author": "Priyansh",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.11.0",
+    "onchange": "^5.2.0",
+    "parallelshell": "^3.0.2"
+  }
+}
